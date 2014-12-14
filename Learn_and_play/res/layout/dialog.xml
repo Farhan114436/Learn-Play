@@ -5,22 +5,22 @@
   
     <ImageView
         android:id="@+id/imageDialog"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="6dp" />
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp" />
  
     <TextView
         android:id="@+id/textDialog"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFF"
+        android:textSize="20sp"
         android:layout_toRightOf="@+id/imageDialog"/>
   
      <Button
         android:id="@+id/declineButton"
-        android:layout_width="200dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text=" FInd "
+        android:text=" Find "
         android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
         android:layout_below="@+id/textDialog"

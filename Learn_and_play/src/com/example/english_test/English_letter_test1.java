@@ -6,6 +6,7 @@ import com.example.learn_and_play.R;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -23,7 +24,8 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 	Button a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t;
 	char ch,ch4;
 	String ch3;
-	int count1=0,count2=0;
+	int count1,count2;
+	int ta,tb,tc,td,te,tf,tg,th,ti,tj,tk,tl,tm,tn,to,tp,tq,tr,ts,tt;
 	MediaPlayer oursong,oursong2;
 	String trs;
 	@Override
@@ -43,7 +45,9 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 
         Random rnd = new Random();
         int numLetters = 1;
-
+        count1=0;
+        ta=tb=tc=td=te=tf=tg=th=ti=tj=tk=tl=tm=tn=to=tp=tq=tr=ts=tt=0;
+        
         String randomLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String candidateChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       
@@ -52,7 +56,7 @@ public class English_letter_test1 extends Activity implements OnClickListener{
         for (int n=0; n<numLetters; n++){
          // Log.d("Random letters",randomLetters.charAt(rnd.nextInt(randomLetters.length())));
         	ch=randomLetters.charAt(rnd.nextInt(randomLetters.length()));
-        	sb2.append(randomLetters.charAt(rnd.nextInt(randomLetters.length())));
+        	sb2.append(ch);
         }
         trs=sb2.toString();
         // set values for custom dialog components - text, image and button
@@ -222,11 +226,13 @@ public class English_letter_test1 extends Activity implements OnClickListener{
         
         for(int k=0;k<str.length();k++){
         	char ch1=str.charAt(k);
-        	if(ch==ch1){
+        	if(ch1==ch){
         		++count1;
         	}
         }
+        count1=count1+2;
         count2=0;
+        Toast.makeText(getApplicationContext(),"Total "+ ch + count1, Toast.LENGTH_LONG).show();
 	}
 	
 	@Override
@@ -234,10 +240,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		case R.id.bt_a:
+			++ta;
 			ch3=a.getText().toString();
 			if(ch3.equals(trs)){
 				a.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(ta==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -249,15 +256,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -276,10 +292,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_b:
+			++tb;
 			ch3=b.getText().toString();
 			if(ch3.equals(trs)){
 				b.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tb==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -291,15 +308,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -318,10 +344,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_c:
+			++tc;
 			ch3=c.getText().toString();
 			if(ch3.equals(trs)){
 				c.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tc==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -333,15 +360,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -360,10 +396,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_d:
+			++td;
 			ch3=d.getText().toString();
 			if(ch3.equals(trs)){
 				d.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(td==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -375,15 +412,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -402,10 +448,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_e:
+			++te;
 			ch3=e.getText().toString();
 			if(ch3.equals(trs)){
 				e.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(te==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -417,15 +464,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -444,10 +500,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_f:
+			++tf;
 			ch3=f.getText().toString();
 			if(ch3.equals(trs)){
 				f.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tf==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -459,15 +516,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -486,10 +552,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_g:
+			++tg;
 			ch3=g.getText().toString();
 			if(ch3.equals(trs)){
 				g.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tg==1)++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -501,15 +568,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -528,10 +604,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_h:
+			++th;
 			ch3=h.getText().toString();
 			if(ch3.equals(trs)){
 				h.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(th==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -543,15 +620,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -570,10 +656,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_i:
+			ti++;
 			ch3=i.getText().toString();
 			if(ch3.equals(trs)){
 				i.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(ti==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -585,15 +672,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -612,10 +708,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_j:
+			++tj;
 			ch3=j.getText().toString();
 			if(ch3.equals(trs)){
 				j.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tj==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -627,15 +724,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -654,10 +760,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_k:
+			++tk;
 			ch3=k.getText().toString();
 			if(ch3.equals(trs)){
 				k.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tk==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -669,15 +776,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -696,10 +812,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_l:
+			++tl;
 			ch3=l.getText().toString();
 			if(ch3.equals(trs)){
 				l.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tl==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -711,15 +828,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -738,10 +864,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_m:
+			++tm;
 			ch3=m.getText().toString();
 			if(ch3.equals(trs)){
 				m.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tm==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -753,15 +880,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -780,10 +916,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_n:
+			++tn;
 			ch3=n.getText().toString();
 			if(ch3.equals(trs)){
 				n.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tn==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -795,15 +932,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -822,10 +968,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_o:
+			++to;
 			ch3=o.getText().toString();
 			if(ch3.equals(trs)){
 				o.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(to==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -837,15 +984,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -864,10 +1020,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_p:
+			++tp;
 			ch3=p.getText().toString();
 			if(ch3.equals(trs)){
 				p.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tp==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -879,15 +1036,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -906,10 +1072,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_q:
+			++tq;
 			ch3=q.getText().toString();
 			if(ch3.equals(trs)){
 				q.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tq==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -921,15 +1088,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -948,10 +1124,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_r:
+			++tr;
 			ch3=r.getText().toString();
 			if(ch3.equals(trs)){
 				r.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tr==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -963,15 +1140,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -990,10 +1176,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_s:
+			++ts;
 			ch3=s.getText().toString();
 			if(ch3.equals(trs)){
 				s.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(ts==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -1005,15 +1192,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -1032,10 +1228,11 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.bt_t:
+			++tt;
 			ch3=t.getText().toString();
 			if(ch3.equals(trs)){
 				t.setBackgroundColor(Color.CYAN);
-				++count2;
+				if(tt==1) ++count2;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -1047,15 +1244,24 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 					}
 				};
 				timer.start();
-				runOnUiThread(new Runnable() 
-				{
-				   public void run() 
-				   {
-				     showCustomAlert(); 
-				   }
-				}); 
-				if(count2==count1+1){
-					CheckCondition();
+				if(count2==count1){
+					
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     CheckCondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -1106,24 +1312,27 @@ public class English_letter_test1 extends Activity implements OnClickListener{
 
 	        // set values for custom dialog components - text, image and button
 	        TextView text = (TextView) dialog.findViewById(R.id.textDialog);
-	        text.setText("Test 1 successfully passed");
+	        text.setText("Test 1 successfully passed!!");
 	        ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
 	        image.setImageResource(R.drawable.pass);
 
 	        dialog.show();
 	         
 	        Button declineButton = (Button) dialog.findViewById(R.id.declineButton);
+	        declineButton.setText("Congratulations");
 	        // if decline button is clicked, close the custom dialog
 	        declineButton.setOnClickListener(new OnClickListener() {
 	            @Override
 	            public void onClick(View v) {
 	                // Close dialog
 	                dialog.dismiss();
+	                finish();
+	                Intent intent = new Intent(getApplicationContext(),English_letter_test1.class);
+	    			startActivity(intent);
 	            }
 	        });
 	        
-	    	//Intent intent = new Intent(this,English_letter_test1.class);
-			//startActivity(intent);
+	    	
 	    }
 	 @Override
 		protected void onPause() {

@@ -1,7 +1,5 @@
 package com.example.english_test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 import com.example.learn_and_play.R;
 import android.app.Activity;
@@ -24,17 +22,17 @@ import android.widget.Toast;
 
 public class English_letter_test3 extends Activity implements OnClickListener{
 	EditText et1,et2,et3,et4,et5,et6,et7,et8,et9,et10,et11,et12;
-	String set1="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	String set2="abcdefghijklmnopqrstuvwxyz";
+	
+	private static String[] sarray1={"ABCD","BCDE","CDEF","DEFG","EFGH","FGHI","GHIJ","HIJK","IJKL","JKLM","KLMN","LMNO","MNOP","NOPQ","OPQR",
+									"PQRS","QRST","RSTU","STUV","TUVW","UVWX","VWXY","WXYZ"};
+	private static String[] sarray2={"abcd","bcde","cdef","defg","efgh","fghi","ghij","hijk","ijkl","jklm","klmn","lmno","mnop","nopq","opqr",
+									"pqrs","qrst","rstu","stuv","tuvw","uvwx","vwxy","wxyz"};
 	String str1,str2,str3;
-	int num=4;
+	int num;
 	MediaPlayer oursong,oursong2;
 	char ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,ch12,in;
-	ArrayList<String> strings1;
-	ArrayList<String> strings2;
-	ArrayList<String> strings3;
-	String input;
-	int count=0;
+	String input,s1,s2,s3;
+	int count,t1,t2,t3;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -42,8 +40,10 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 		setContentView(R.layout.eng_letter_test2);
 		oursong = MediaPlayer.create(English_letter_test3.this, R.raw.correct); 
 		oursong2 = MediaPlayer.create(English_letter_test3.this, R.raw.wrong); 
-		Random rnd = new Random();
-		str1=str2="";
+		
+		str1=str2=str3="";
+		t1=t2=t3=0;
+		count=0;
 		et1=(EditText)findViewById(R.id.et_a);
 		et2=(EditText)findViewById(R.id.et_b);
 		et3=(EditText)findViewById(R.id.et_c);
@@ -70,49 +70,10 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 		et10.setKeyListener(null);
 		et11.setKeyListener(null);
 		
-		
-		StringBuilder sb = new StringBuilder();
-        
-        for (int i = 0; i < num; i++) {
-            sb.append(set1.charAt(rnd.nextInt(set1.length())));
-        }
-		str1=sb.toString();
-		
-		StringBuilder sb2 = new StringBuilder();
-        
-        for (int i = 0; i < num; i++) {
-            sb2.append(set2.charAt(rnd.nextInt(set2.length())));
-        }
-		str2=sb2.toString();
-		
-		StringBuilder sb3 = new StringBuilder();
-        
-        for (int i = 0; i < num; i++) {
-            sb3.append(set1.charAt(rnd.nextInt(set1.length())));
-        }
-		str3=sb3.toString();
-		
-		strings1 = new ArrayList<String>();
-		strings2 = new ArrayList<String>();
-		strings3 = new ArrayList<String>();
-	    strings1.add(str1);
-	    strings2.add(str2);
-	    strings3.add(str3);
-
-	    String[] stringsArray = new String[strings1.size()];
-	    strings1.toArray(stringsArray);
-	    Arrays.sort(stringsArray);
-	    str1=stringsArray.toString();
-
-	    String[] stringsArray2 = new String[strings2.size()];
-	    strings2.toArray(stringsArray2);
-	    Arrays.sort(stringsArray2);
-	    str2=stringsArray2.toString();
-	    
-	    String[] stringsArray3 = new String[strings3.size()];
-	    strings3.toArray(stringsArray3);
-	    Arrays.sort(stringsArray3);
-	    str3=stringsArray3.toString();
+		num=1;
+		str1 = sarray1[new Random().nextInt(sarray1.length)];
+		str2 = sarray2[new Random().nextInt(sarray2.length)];
+		str3 = sarray1[new Random().nextInt(sarray1.length)];
 	    
 		ch1=str1.charAt(0);
 		ch2=str1.charAt(1);
@@ -122,28 +83,32 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 		Log.d("2", str2);
 		Log.d("3", str3);
 		
-		et1.setText(ch1);
-		et2.setText(ch2);
-		et4.setText(ch4);
+		et1.setText(String.valueOf(ch1));
+		et2.setText(String.valueOf(ch2));
+		et4.setText(String.valueOf(ch4));
 		
 		ch5=str2.charAt(0);
 		ch6=str2.charAt(1);
 		ch7=str2.charAt(2);
 		ch8=str2.charAt(3);
 		
-		et6.setText(ch2);
-		et7.setText(ch3);
-		et8.setText(ch4);
+		et6.setText(String.valueOf(ch6));
+		et7.setText(String.valueOf(ch7));
+		et8.setText(String.valueOf(ch8));
 		
 		ch9=str3.charAt(0);
 		ch10=str3.charAt(1);
 		ch11=str3.charAt(2);
 		ch12=str3.charAt(3);
 		
-		et9.setText(ch1);
-		et10.setText(ch2);
-		et11.setText(ch3);
+		et9.setText(String.valueOf(ch9));
+		et10.setText(String.valueOf(ch10));
+		et11.setText(String.valueOf(ch11));
 
+		s1=String.valueOf(ch3);
+		s2=String.valueOf(ch5);
+		s3=String.valueOf(ch12);
+		
 		et3.setOnClickListener(this);
 		et5.setOnClickListener(this);
 		et12.setOnClickListener(this);
@@ -153,15 +118,14 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		case R.id.et_c:
-			et3.setBackgroundColor(Color.CYAN);
+			++t1;
 			input=et3.getText().toString();
-			in=input.charAt(0);
-			if(in==ch3){
+			if(input.equals(s1)){
 				et1.setBackgroundColor(Color.BLUE);
 				et2.setBackgroundColor(Color.BLUE);
 				et3.setBackgroundColor(Color.BLUE);
 				et4.setBackgroundColor(Color.BLUE);
-				++count;
+				if(t1==1) ++count;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -169,14 +133,27 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 							sleep(1000);					
 						} catch (InterruptedException e){
 							e.printStackTrace();
-						}finally{
-							showCustomAlert();
 						}
 					}
 				};
 				timer.start();
 				if(count==3){
-					Checkcondition();
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     Checkcondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -195,16 +172,14 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_e:
-			et5.setText("");
-			et5.setBackgroundColor(Color.CYAN);
+			++t2;
 			input=et5.getText().toString();
-			in=input.charAt(0);
-			if(in==ch5){
+			if(input.equals(s2)){
 				et5.setBackgroundColor(Color.BLUE);
 				et6.setBackgroundColor(Color.BLUE);
 				et7.setBackgroundColor(Color.BLUE);
 				et8.setBackgroundColor(Color.BLUE);
-				++count;
+				if(t2==1) ++count;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -212,14 +187,27 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 							sleep(1000);					
 						} catch (InterruptedException e){
 							e.printStackTrace();
-						}finally{
-							showCustomAlert();
 						}
 					}
 				};
 				timer.start();
 				if(count==3){
-					Checkcondition();
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     Checkcondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -238,16 +226,14 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_l:
-			et12.setText("");
-			et12.setBackgroundColor(Color.CYAN);
+			++t3;
 			input=et12.getText().toString();
-			in=input.charAt(0);
-			if(in==ch12){
+			if(input.equals(s3)){
 				et9.setBackgroundColor(Color.BLUE);
 				et10.setBackgroundColor(Color.BLUE);
 				et11.setBackgroundColor(Color.BLUE);
 				et12.setBackgroundColor(Color.BLUE);
-				++count;
+				if(t3==1) ++count;
 				oursong.start();
 				Thread timer = new Thread(){
 					public void run(){
@@ -255,14 +241,27 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 							sleep(1000);					
 						} catch (InterruptedException e){
 							e.printStackTrace();
-						}finally{
-							showCustomAlert();
 						}
 					}
 				};
 				timer.start();
 				if(count==3){
-					Checkcondition();
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     Checkcondition(); 
+					   }
+					}); 
+				}
+				else{
+					runOnUiThread(new Runnable() 
+					{
+					   public void run() 
+					   {
+					     showCustomAlert(); 
+					   }
+					}); 
 				}
 			}
 			else{
@@ -286,32 +285,33 @@ public class English_letter_test3 extends Activity implements OnClickListener{
 	
 	public void Checkcondition()
     {
-		  final Dialog dialog = new Dialog(English_letter_test3.this);
-          // Include dialog.xml file
-          dialog.setContentView(R.layout.dialog);
-          // Set dialog title
-          dialog.setTitle("Test 3");
+		final Dialog dialog = new Dialog(English_letter_test3.this);
+        // Include dialog.xml file
+        dialog.setContentView(R.layout.dialog);
+        // Set dialog title
+        dialog.setTitle("Test 3");
 
-          // set values for custom dialog components - text, image and button
-          TextView text = (TextView) dialog.findViewById(R.id.textDialog);
-          text.setText("Test 3 successfully passed");
-          ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
-          image.setImageResource(R.drawable.pass);
+        // set values for custom dialog components - text, image and button
+        TextView text = (TextView) dialog.findViewById(R.id.textDialog);
+        text.setText("Test 3 successfully passed!!");
+        ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+        image.setImageResource(R.drawable.pass);
 
-          dialog.show();
-           
-          Button declineButton = (Button) dialog.findViewById(R.id.declineButton);
-          // if decline button is clicked, close the custom dialog
-          declineButton.setOnClickListener(new OnClickListener() {
-              @Override
-              public void onClick(View v) {
-                  // Close dialog
-                  dialog.dismiss();
-              }
-          });
-        
-    	Intent intent = new Intent(this,English_letter_test3.class);
-		startActivity(intent);
+        dialog.show();
+         
+        Button declineButton = (Button) dialog.findViewById(R.id.declineButton);
+        declineButton.setText("Congratulations");
+        // if decline button is clicked, close the custom dialog
+        declineButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Close dialog
+                dialog.dismiss();
+                finish();
+                Intent intent = new Intent(getApplicationContext(),English_letter_test3.class);
+    			startActivity(intent);
+            }
+        });
     }
 	
 	 public void showCustomAlert()

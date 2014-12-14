@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
@@ -22,8 +22,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_b"
@@ -32,8 +34,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_c"
@@ -42,8 +46,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_d"
@@ -52,14 +58,16 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginLeft="10dp"
         android:layout_weight="1"
         android:orientation="horizontal"
@@ -72,8 +80,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_f"
@@ -82,8 +92,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_g"
@@ -92,8 +104,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_h"
@@ -102,14 +116,16 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginLeft="10dp"
         android:layout_weight="1"
         android:orientation="horizontal"
@@ -122,8 +138,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_j"
@@ -132,8 +150,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_k"
@@ -142,8 +162,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_l"
@@ -152,8 +174,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="70sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

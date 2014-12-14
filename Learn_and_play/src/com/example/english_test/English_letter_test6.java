@@ -27,9 +27,10 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 	EditText et1,et2,et3,et4,et5,et6;
 	String pid,type,thing,input;
 	Button bt;
-	char ch1,ch2,ch3,ch4,ch5,ch6,in;
+	String s1,s2,s3,s4,s5,s6;
 	MediaPlayer oursong,oursong2;
 	int count,len;
+	int t1,t2,t3,t4,t5,t6;
 	private static int[] stra ={R.drawable.airplane,R.drawable.aligator,R.drawable.alien,R.drawable.ankle,R.drawable.ant,R.drawable.apple,R.drawable.ax};
 	private static int[] strb ={R.drawable.ball,R.drawable.bat,R.drawable.bird,R.drawable.boat,R.drawable.book,R.drawable.box,R.drawable.bus};
 	private static int[] strc ={R.drawable.car,R.drawable.carrot,R.drawable.cat,R.drawable.caw};
@@ -97,6 +98,7 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 		et5=(EditText)findViewById(R.id.et_5);
 		et6=(EditText)findViewById(R.id.et_6);
 		bt=(Button)findViewById(R.id.hint);
+		t1=t2=t3=t4=t5=t6=0;
 		oursong = MediaPlayer.create(English_letter_test6.this, R.raw.correct); 
 		oursong2 = MediaPlayer.create(English_letter_test6.this, R.raw.wrong); 
 		count=0;
@@ -571,6 +573,7 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			    }
 			}
 		}
+		Toast.makeText(getApplicationContext(), thing, Toast.LENGTH_LONG);
 		et1.setOnClickListener(this);
 		et2.setOnClickListener(this);
 		et3.setOnClickListener(this);
@@ -586,8 +589,8 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			et6.setVisibility(1);
 			et3.setVisibility(0);
 			et4.setVisibility(0);
-			ch3=thing.charAt(0);
-			ch4=thing.charAt(1);
+			s3=String.valueOf(thing.charAt(0));
+			s4=String.valueOf(thing.charAt(1));
 		}
 		else if(len==3){
 			et1.setVisibility(1);
@@ -596,9 +599,9 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			et6.setVisibility(1);
 			et3.setVisibility(0);
 			et4.setVisibility(0);
-			ch2=thing.charAt(0);
-			ch3=thing.charAt(1);
-			ch4=thing.charAt(2);
+			s2=String.valueOf(thing.charAt(0));
+			s3=String.valueOf(thing.charAt(1));
+			s4=String.valueOf(thing.charAt(2));
 		}
 		else if(len==4){
 			et1.setVisibility(1);
@@ -607,10 +610,10 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			et6.setVisibility(1);
 			et3.setVisibility(0);
 			et4.setVisibility(0);
-			ch2=thing.charAt(0);
-			ch3=thing.charAt(1);
-			ch4=thing.charAt(2);
-			ch5=thing.charAt(3);
+			s2=String.valueOf(thing.charAt(0));
+			s3=String.valueOf(thing.charAt(1));
+			s4=String.valueOf(thing.charAt(2));
+			s5=String.valueOf(thing.charAt(3));
 		}
 		else if(len==5){
 			et1.setVisibility(0);
@@ -619,11 +622,11 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			et6.setVisibility(1);
 			et3.setVisibility(0);
 			et4.setVisibility(0);
-			ch1=thing.charAt(0);
-			ch2=thing.charAt(1);
-			ch3=thing.charAt(2);
-			ch4=thing.charAt(3);
-			ch5=thing.charAt(4);
+			s1=String.valueOf(thing.charAt(0));
+			s2=String.valueOf(thing.charAt(1));
+			s3=String.valueOf(thing.charAt(2));
+			s4=String.valueOf(thing.charAt(3));
+			s5=String.valueOf(thing.charAt(4));
 		}
 		else if(len==6){
 			et1.setVisibility(0);
@@ -632,12 +635,13 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			et6.setVisibility(0);
 			et3.setVisibility(0);
 			et4.setVisibility(0);
-			ch1=thing.charAt(0);
-			ch2=thing.charAt(1);
-			ch3=thing.charAt(2);
-			ch4=thing.charAt(3);
-			ch5=thing.charAt(4);			
-			ch6=thing.charAt(5);
+			s1=String.valueOf(thing.charAt(0));
+			s2=String.valueOf(thing.charAt(1));
+			s3=String.valueOf(thing.charAt(2));
+			s4=String.valueOf(thing.charAt(3));
+			s5=String.valueOf(thing.charAt(4));
+			s6=String.valueOf(thing.charAt(5));
+			
 		}
 		
 		
@@ -649,12 +653,11 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 		switch(v.getId()){
 		case R.id.et_1:
 			if(et1.VISIBLE==0){
-				et1.setBackgroundColor(Color.CYAN);
+				++t1;
 				input=et1.getText().toString();
-				in=input.charAt(0);
-				if(in==ch1){
+				if(input.equals(s1)){
 					et1.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t1==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
