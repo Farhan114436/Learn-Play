@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.word_games"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.word_games.Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+            
+            <activity
+            android:name="com.example.word_games.MainActivity"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" >
+        	</activity>
+        	
+            
+        <activity
+            android:name="com.example.word_games.LevelSelectActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_level_select"
+            android:parentActivityName="com.example.hangu.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hangu.MainActivity" />
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.word_games.PlayActivity"
+            android:label="@string/title_activity_play"
+            android:parentActivityName="com.example.hangu.LevelSelectActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hangu.LevelSelectActivity" />
+        </activity>
+     <activity android:name=".StartScreen"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            </activity>
+    <activity android:name=".PossibleWords" android:screenOrientation="portrait"/>
+	<activity android:name=".onEnd" android:screenOrientation="portrait"/>
+	<activity android:name=".Repo" android:screenOrientation="portrait"/>
+	<activity android:name=".AllMissed" android:screenOrientation="portrait"/>
+	<activity android:name=".GameSpace" android:screenOrientation="portrait"/>
+	<activity android:name=".Missed" android:screenOrientation="portrait"/>
+	<activity android:name=".Options" android:screenOrientation="portrait"/>
+    <uses-library android:name="android.test.runner" />
+   
+        </application>
+
+</manifest>
