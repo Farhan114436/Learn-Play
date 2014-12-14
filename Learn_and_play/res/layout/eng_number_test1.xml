@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <EditText
+            android:id="@+id/et_a"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_b"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_c"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_d"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+        
+         <EditText
+            android:id="@+id/et_e"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <EditText
+            android:id="@+id/et_f"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_g"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_h"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_i"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+        
+        <EditText
+            android:id="@+id/et_j"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <EditText
+            android:id="@+id/et_k"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_l"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_m"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_n"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+        
+         <EditText
+            android:id="@+id/et_o"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <EditText
+            android:id="@+id/et_p"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_q"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_r"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/et_s"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+        
+         <EditText
+            android:id="@+id/et_t"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".7"
+        android:background="#00ff00"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <ImageButton
+                android:id="@+id/bt_1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/one" />
+
+            <ImageButton
+                android:id="@+id/bt_5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/five" />
+
+            <ImageButton
+                android:id="@+id/bt_7"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/seveen" />
+
+            <ImageButton
+                android:id="@+id/bt_8"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/eight" />
+
+            <ImageButton
+                android:id="@+id/bt_10"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/ten" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <ImageButton
+                android:id="@+id/bt_12"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/twelve" />
+
+            <ImageButton
+                android:id="@+id/bt_14"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/fourteen" />
+
+            <ImageButton
+                android:id="@+id/bt_16"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/sixteen" />
+
+            <ImageButton
+                android:id="@+id/bt_19"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/nineteen" />
+
+            <ImageButton
+                android:id="@+id/bt_20"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="bottom|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/twenty" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1.3"
+        android:background="#00ffff"
+        android:orientation="vertical"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/et_14"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#FF4040"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Fourteen"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                 />
+
+            <EditText
+                android:id="@+id/et_7"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#388E8E"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Seven"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/et_10"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#71C671"
+                android:gravity="center"
+                android:scaleType="fitXY" 
+                android:text="Ten"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_12"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#8E8E38"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Twelve"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/et_8"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#FF7F24"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Eight"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_16"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#458B00"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Sixteen"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/et_1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#00CD66"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="One"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_19"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#838B8B"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Nineteen"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/et_20"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#8968CD"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Twenty"
+                android:textSize="20sp"
+                android:textStyle="bold"  />
+
+            <EditText
+                android:id="@+id/et_5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#CD3278"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="Five"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

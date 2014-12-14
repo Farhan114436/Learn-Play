@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/bt_21"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="প"
+           	
+          
+           />
+
+        <Button
+            android:id="@+id/bt_22"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ফ"
+           
+            />
+
+        <Button
+            android:id="@+id/bt_23"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ব"
+           
+            />
+        <Button
+            android:id="@+id/bt_24"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ভ"
+            
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+         android:layout_marginLeft="10dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/bt_25"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ম"
+            
+           />
+
+        <Button
+            android:id="@+id/bt_26"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="য"
+            
+            />
+
+        <Button
+            android:id="@+id/bt_27"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="র"
+            
+            />
+        <Button
+            android:id="@+id/bt_28"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+           android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ল"
+           
+            />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+         android:layout_marginLeft="10dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/bt_29"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="শ"
+            
+           />
+
+        <Button
+            android:id="@+id/bt_30"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ষ"
+           
+            />
+
+        <Button
+            android:id="@+id/bt_31"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="স"
+            
+            />
+        <Button
+            android:id="@+id/bt_32"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="হ"
+           
+            />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+         android:layout_marginLeft="10dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/bt_33"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ক্ষয়ী
+            "
+            
+           />
+
+        <Button
+            android:id="@+id/bt_34"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ড়"
+           
+            />
+
+        <Button
+            android:id="@+id/bt_35"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ঢ়"
+            
+            />
+        <Button
+            android:id="@+id/bt_36"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="য়"
+           
+            />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+         android:layout_marginLeft="10dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/bt_37"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ৎ"
+           
+           />
+
+        <Button
+            android:id="@+id/bt_38"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ং"
+            
+            />
+
+        <Button
+            android:id="@+id/bt_39"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ঃ"
+            
+            />
+        <Button
+            android:id="@+id/bt_40"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center|fill_vertical"
+             android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ঁ "
+           
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:text="Start Game" />
+
+    <Button
+        android:id="@+id/highScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startGame"
+        android:layout_below="@+id/startGame"
+        android:layout_marginTop="34dp"
+        android:text="High Scores" />
+
+    <Button
+        android:id="@+id/missedWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/highScores"
+        android:layout_below="@+id/highScores"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="32dp"
+        android:text="Missed Words" />
+
+    <Button
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/missedWords"
+        android:layout_toLeftOf="@+id/missedWords"
+        android:text="Options" />
+    
+</RelativeLayout>

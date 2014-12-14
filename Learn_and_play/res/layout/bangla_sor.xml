@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/bt_a"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="অ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_b"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="আ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_c"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ই"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/bt_d"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ঈ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_e"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="উ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_f"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ঊ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/bt_g"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ঋ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_h"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="এ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_i"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ঐ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/bt_j"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ও"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_k"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="ঔ"
+            android:textColor="#104E8B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
