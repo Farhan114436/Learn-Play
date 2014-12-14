@@ -286,12 +286,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 		int five = 0;
 		if (ch == 'A') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				number[0] = new Random().nextInt(whole.length);
 				while (number[0] == 0) {
-					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					number[0] = new Random().nextInt(whole.length);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 1) {
 					randomstring = strb[new Random().nextInt(strb.length)];
@@ -366,12 +367,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'B') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				number[0] = new Random().nextInt(whole.length);
 				while (number[0] == 1) {
-					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					number[0] = new Random().nextInt(whole.length);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -450,9 +452,10 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 				number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 2) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -528,12 +531,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'D') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 3) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -609,12 +613,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'E') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 4) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -690,12 +695,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'F') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 5) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -771,12 +777,12 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'G') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 6) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -852,12 +858,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'H') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 7) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -933,12 +940,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'I') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 8) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1014,12 +1022,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'J') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 9) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1095,12 +1104,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'K') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 10) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1176,12 +1186,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'L') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 11) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1257,12 +1268,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'M') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 12) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1338,12 +1350,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'N') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 13) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1418,12 +1431,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'O') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 14) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1499,12 +1513,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'P') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 15) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1580,12 +1595,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'Q') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 16) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1661,12 +1677,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'R') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 17) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1742,12 +1759,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'S') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 18) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1823,12 +1841,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'T') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 19) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1904,12 +1923,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'U') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 20) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+				
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -1985,12 +2005,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'V') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 21) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -2066,12 +2087,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'W') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 22) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -2147,12 +2169,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'X') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 23) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -2228,12 +2251,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'Y') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 24) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];
@@ -2309,12 +2333,13 @@ public class English_letter_test4 extends Activity implements OnClickListener {
 			}
 		} else if (ch == 'Z') {
 			while (five <= 6) {
-				number = whole[new Random().nextInt(whole.length)];
+				//number = whole[new Random().nextInt(whole.length)];
 				while (number[0] == 25) {
 					number = whole[new Random().nextInt(whole.length)];
-					s1 = Integer.toString(number[0]);
-					Log.d("1", s1);
+					
 				}
+				s1 = Integer.toString(number[0]);
+				Log.d("1", s1);
 				++five;
 				if (number[0] == 0) {
 					randomstring = stra[new Random().nextInt(stra.length)];

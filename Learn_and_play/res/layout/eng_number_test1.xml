@@ -22,8 +22,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_b"
@@ -32,8 +34,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_c"
@@ -42,8 +46,11 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold"
+           />
 
         <EditText
             android:id="@+id/et_d"
@@ -52,8 +59,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         
          <EditText
             android:id="@+id/et_e"
@@ -62,8 +71,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,8 +93,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_g"
@@ -92,8 +105,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/et_h"
@@ -102,8 +117,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_i"
@@ -112,8 +129,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         
         <EditText
             android:id="@+id/et_j"
@@ -122,8 +141,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         
     </LinearLayout>
 
@@ -143,8 +164,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_l"
@@ -153,8 +176,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_m"
@@ -163,8 +188,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_n"
@@ -173,8 +200,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         
          <EditText
             android:id="@+id/et_o"
@@ -183,8 +212,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
      <LinearLayout
@@ -203,8 +234,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_q"
@@ -213,8 +246,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_r"
@@ -223,8 +258,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_s"
@@ -233,8 +270,10 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+            android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
         
          <EditText
             android:id="@+id/et_t"
@@ -243,7 +282,9 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="#87CEEB"
-            android:gravity="bottom|center"
-            android:scaleType="fitXY" />
+             android:gravity="center"
+            android:textColor="#8B4513"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

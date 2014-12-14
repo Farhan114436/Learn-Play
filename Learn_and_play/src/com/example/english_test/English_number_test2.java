@@ -148,7 +148,7 @@ public class English_number_test2 extends Activity {
 				}
 				case DragEvent.ACTION_DRAG_ENDED: {
 
-					return (true);
+					break;
 				}
 				default:
 					break;

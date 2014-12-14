@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Random;
 import com.example.learn_and_play.R;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -573,7 +574,7 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			    }
 			}
 		}
-		Toast.makeText(getApplicationContext(), thing, Toast.LENGTH_LONG);
+		Toast.makeText(getApplicationContext(), thing, Toast.LENGTH_LONG).show();
 		et1.setOnClickListener(this);
 		et2.setOnClickListener(this);
 		et3.setOnClickListener(this);
@@ -583,45 +584,45 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 		bt.setOnClickListener(this);
 	    len=thing.length();
 		if(len==2){
-			et1.setVisibility(1);
-			et2.setVisibility(1);
-			et5.setVisibility(1);
-			et6.setVisibility(1);
-			et3.setVisibility(0);
-			et4.setVisibility(0);
+			et1.setVisibility(View.GONE);
+			et2.setVisibility(View.GONE);
+			et5.setVisibility(View.GONE);
+			et6.setVisibility(View.GONE);
+			et3.setVisibility(View.VISIBLE);
+			et4.setVisibility(View.VISIBLE);
 			s3=String.valueOf(thing.charAt(0));
 			s4=String.valueOf(thing.charAt(1));
 		}
 		else if(len==3){
-			et1.setVisibility(1);
-			et2.setVisibility(0);
-			et5.setVisibility(1);
-			et6.setVisibility(1);
-			et3.setVisibility(0);
-			et4.setVisibility(0);
+			et1.setVisibility(View.GONE);
+			et2.setVisibility(View.VISIBLE);
+			et5.setVisibility(View.GONE);
+			et6.setVisibility(View.GONE);
+			et3.setVisibility(View.VISIBLE);
+			et4.setVisibility(View.VISIBLE);
 			s2=String.valueOf(thing.charAt(0));
 			s3=String.valueOf(thing.charAt(1));
 			s4=String.valueOf(thing.charAt(2));
 		}
 		else if(len==4){
-			et1.setVisibility(1);
-			et2.setVisibility(0);
-			et5.setVisibility(0);
-			et6.setVisibility(1);
-			et3.setVisibility(0);
-			et4.setVisibility(0);
+			et1.setVisibility(View.GONE);
+			et2.setVisibility(View.VISIBLE);
+			et5.setVisibility(View.VISIBLE);
+			et6.setVisibility(View.GONE);
+			et3.setVisibility(View.VISIBLE);
+			et4.setVisibility(View.VISIBLE);
 			s2=String.valueOf(thing.charAt(0));
 			s3=String.valueOf(thing.charAt(1));
 			s4=String.valueOf(thing.charAt(2));
 			s5=String.valueOf(thing.charAt(3));
 		}
 		else if(len==5){
-			et1.setVisibility(0);
-			et2.setVisibility(0);
-			et5.setVisibility(0);
-			et6.setVisibility(1);
-			et3.setVisibility(0);
-			et4.setVisibility(0);
+			et1.setVisibility(View.VISIBLE);
+			et2.setVisibility(View.VISIBLE);
+			et5.setVisibility(View.VISIBLE);
+			et6.setVisibility(View.GONE);
+			et3.setVisibility(View.VISIBLE);
+			et4.setVisibility(View.VISIBLE);
 			s1=String.valueOf(thing.charAt(0));
 			s2=String.valueOf(thing.charAt(1));
 			s3=String.valueOf(thing.charAt(2));
@@ -629,12 +630,12 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			s5=String.valueOf(thing.charAt(4));
 		}
 		else if(len==6){
-			et1.setVisibility(0);
-			et2.setVisibility(0);
-			et5.setVisibility(0);
-			et6.setVisibility(0);
-			et3.setVisibility(0);
-			et4.setVisibility(0);
+			et1.setVisibility(View.VISIBLE);
+			et2.setVisibility(View.VISIBLE);
+			et5.setVisibility(View.VISIBLE);
+			et6.setVisibility(View.VISIBLE);
+			et3.setVisibility(View.VISIBLE);
+			et4.setVisibility(View.VISIBLE);
 			s1=String.valueOf(thing.charAt(0));
 			s2=String.valueOf(thing.charAt(1));
 			s3=String.valueOf(thing.charAt(2));
@@ -652,10 +653,11 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		case R.id.et_1:
-			if(et1.VISIBLE==0){
-				++t1;
+			if(et1.getVisibility()==View.VISIBLE){
+				
 				input=et1.getText().toString();
 				if(input.equals(s1)){
+					++t1;
 					et1.setBackgroundColor(Color.BLUE);
 					if(t1==1) ++count;
 					oursong.start();
@@ -670,7 +672,22 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
+					}
+					else{
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     showCustomAlert(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -690,13 +707,13 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_2:
-			if(et2.VISIBLE==0){
-				et2.setBackgroundColor(Color.CYAN);
+			if(et2.getVisibility()==View.VISIBLE){
+				
 				input=et2.getText().toString();
-				in=input.charAt(0);
-				if(in==ch2){
+				if(input.equals(s2)){
+					++t2;
 					et2.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t2==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -709,7 +726,22 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
+					}
+					else{
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     showCustomAlert(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -729,13 +761,13 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_3:
-			if(et3.VISIBLE==0){
-				et3.setBackgroundColor(Color.CYAN);
+			if(et3.getVisibility()==View.VISIBLE){
+				
 				input=et3.getText().toString();
-				in=input.charAt(0);
-				if(in==ch3){
+				if(input.equals(s3)){
+					++t3;
 					et3.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t3==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -748,7 +780,22 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
+					}
+					else{
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     showCustomAlert(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -768,13 +815,13 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_4:
-			if(et4.VISIBLE==0){
-				et4.setBackgroundColor(Color.CYAN);
+			if(et4.getVisibility()==View.VISIBLE){
+				
 				input=et4.getText().toString();
-				in=input.charAt(0);
-				if(in==ch4){
+				if(input.equals(s4)){
+					++t4;
 					et4.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t4==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -787,7 +834,22 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
+					}
+					else{
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     showCustomAlert(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -807,13 +869,13 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_5:
-			if(et5.VISIBLE==0){
-				et5.setBackgroundColor(Color.CYAN);
+			if(et5.getVisibility()==View.VISIBLE){
+				
 				input=et5.getText().toString();
-				in=input.charAt(0);
-				if(in==ch5){
+				if(input.equals(s5)){
+					++t5;
 					et5.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t5==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -826,7 +888,22 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
+					}
+					else{
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     showCustomAlert(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -846,13 +923,13 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_6:
-			if(et6.VISIBLE==0){
-				et6.setBackgroundColor(Color.CYAN);
+			if(et6.getVisibility()==View.VISIBLE){
+				
 				input=et6.getText().toString();
-				in=input.charAt(0);
-				if(in==ch6){
+				if(input.equals(s6)){
+					++t6;
 					et6.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t6==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -865,7 +942,22 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
+					}
+					else{
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     showCustomAlert(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -885,62 +977,93 @@ public class English_letter_test6 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.hint:
-			showCustomAlert();
+			runOnUiThread(new Runnable() 
+			{
+			   public void run() 
+			   {
+				   showAlert(); 
+			   }
+			}); 
 			break;
 		}
 	}
 	
-	public void Checkcondition()
-    {
-	    Context context = getApplicationContext();
-        // Create layout inflator object to inflate toast.xml file
-        LayoutInflater inflater = getLayoutInflater();
-          
-        // Call toast.xml file for toast layout 
-        View toastRoot = inflater.inflate(R.layout.toast, null);
-        TextView tv=(TextView)findViewById(R.id.tv); 
-        ImageView im=(ImageView)findViewById(R.id.imv);
-        Toast toast = new Toast(context);
-        im.setImageResource(R.drawable.pass);
-        tv.setText("Test 5 Successfully Passed!!"); 
-        // Set layout to toast 
-        toast.setView(toastRoot);
-        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,
-                0, 0);
-        toast.setDuration(Toast.LENGTH_LONG);
-        toast.show(); 
-        
-    	Intent intent = new Intent(this,English_letter_test5.class);
-		startActivity(intent);
-    }
-	
-	 public void showCustomAlert()
-	    {
-	         
-	        Context context = getApplicationContext();
+	public void showAlert(){
+		 Context context = getApplicationContext();
 	        // Create layout inflator object to inflate toast.xml file
 	        LayoutInflater inflater = getLayoutInflater();
 	          
 	        // Call toast.xml file for toast layout 
 	        View toastRoot = inflater.inflate(R.layout.toast, null);
 	        TextView tv=(TextView)findViewById(R.id.tv);
-	        tv.setText(thing);
+	       
 	        Toast toast = new Toast(context);
-	         
+	        tv.setText(thing);
 	        // Set layout to toast 
 	        toast.setView(toastRoot);
 	        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,
 	                0, 0);
 	        toast.setDuration(Toast.LENGTH_SHORT);
 	        toast.show();
-	         
-	    }
-	 @Override
-		protected void onPause() {
-			// TODO Auto-generated method stub
-			super.onPause();
-			oursong.release();
-			oursong2.release();
-			
-		}
+	}
+	public void showCustomAlert()
+    {
+         
+        Context context = getApplicationContext();
+        // Create layout inflator object to inflate toast.xml file
+        LayoutInflater inflater = getLayoutInflater();
+          
+        // Call toast.xml file for toast layout 
+        View toastRoot = inflater.inflate(R.layout.toast, null);
+          
+        Toast toast = new Toast(context);
+         
+        // Set layout to toast 
+        toast.setView(toastRoot);
+        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,
+                0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.show();
+         
+    }
+ public void Checkcondition()
+    {
+	 final Dialog dialog = new Dialog(English_letter_test6.this);
+        // Include dialog.xml file
+        dialog.setContentView(R.layout.dialog);
+        // Set dialog title
+        dialog.setTitle("Test 5");
+
+        // set values for custom dialog components - text, image and button
+        TextView text = (TextView) dialog.findViewById(R.id.textDialog);
+        text.setText("Test 5 successfully passed!!");
+        ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+        image.setImageResource(R.drawable.pass);
+
+        dialog.show();
+         
+        Button declineButton = (Button) dialog.findViewById(R.id.declineButton);
+        declineButton.setText("Congratulations");
+        // if decline button is clicked, close the custom dialog
+        declineButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Close dialog
+                dialog.dismiss();
+                finish();
+                Intent intent = new Intent(getApplicationContext(),English_letter_test5.class);
+    			startActivity(intent);
+            }
+        });
+        
+    	
+    }
+ @Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		oursong.release();
+		oursong2.release();
+		
+	}
 }

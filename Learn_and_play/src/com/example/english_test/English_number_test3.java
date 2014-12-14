@@ -32,6 +32,7 @@ public class English_number_test3 extends Activity implements OnClickListener{
 	ArrayList<Integer> strings1;
 	int count,in,len,n1,n2;
 	Boolean doubles;
+	int t1,t2;
 	private static int[] stra ={R.drawable.onep,R.drawable.onep2,R.drawable.twop,R.drawable.twop2,
 								R.drawable.threep,R.drawable.threep2,R.drawable.fourp,R.drawable.fourp2,
 								R.drawable.fivep,R.drawable.fivep2,R.drawable.sixp,R.drawable.sixp2,
@@ -86,39 +87,39 @@ public class English_number_test3 extends Activity implements OnClickListener{
 		id=randomstring;
 		if(id==R.drawable.onep || id==R.drawable.onep2){
 			key=1;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.twop || id==R.drawable.twop2){
 			key=2;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.threep || id==R.drawable.threep2){
 			key=3;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.fourp || id==R.drawable.fourp2){
 			key=4;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.fivep || id==R.drawable.fivep2){
 			key=5;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.sixp || id==R.drawable.sixp2){
 			key=6;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.sevenp || id==R.drawable.sevenp2){
 			key=7;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.eightp || id==R.drawable.eightp2){
 			key=8;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.ninep || id==R.drawable.ninep2){
 			key=9;
-			et2.setVisibility(1);
+			et2.setVisibility(View.GONE);
 		}
 		else if(id==R.drawable.tenp || id==R.drawable.tenp2){
 			key=10;
@@ -175,12 +176,13 @@ public class English_number_test3 extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		case R.id.et_1:
-			if(et1.VISIBLE==0){
+			if(et1.getVisibility()==View.VISIBLE){
 				et1.setBackgroundColor(Color.CYAN);
 				in=Integer.parseInt(et1.getText().toString());
 				if(in==key && !doubles){
+					++t1;
 					et1.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t1==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -193,12 +195,18 @@ public class English_number_test3 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
 					}
 				}
 				else if(doubles && in==n1){
 					et1.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t1==1) ++count;
 					check=1;
 					oursong.start();
 					Thread timer = new Thread(){
@@ -212,7 +220,13 @@ public class English_number_test3 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -232,12 +246,13 @@ public class English_number_test3 extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.et_2:
-			if(et2.VISIBLE==0){
+			if(et2.getVisibility()==View.VISIBLE){
 				et2.setBackgroundColor(Color.CYAN);
 				in=Integer.parseInt(et2.getText().toString());
 				if(in==key && !doubles){
+					++t2;
 					et2.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t2==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -250,12 +265,18 @@ public class English_number_test3 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
 					}
 				}
 				else if(doubles && in==n2){
 					et1.setBackgroundColor(Color.BLUE);
-					++count;
+					if(t2==1) ++count;
 					oursong.start();
 					Thread timer = new Thread(){
 						public void run(){
@@ -268,7 +289,13 @@ public class English_number_test3 extends Activity implements OnClickListener{
 					};
 					timer.start();
 					if(count==len && check==1){
-						Checkcondition();
+						runOnUiThread(new Runnable() 
+						{
+						   public void run() 
+						   {
+						     Checkcondition(); 
+						   }
+						}); 
 					}
 				}
 				else{
@@ -316,11 +343,13 @@ public class English_number_test3 extends Activity implements OnClickListener{
             public void onClick(View v) {
                 // Close dialog
                 dialog.dismiss();
+                finish();
+                Intent intent = new Intent(getApplicationContext(),English_number_test3.class);
+        		startActivity(intent);
             }
         });
         
-    	Intent intent = new Intent(this,English_number_test3.class);
-		startActivity(intent);
+    	
     }
 	
 	 public void showCustomAlert()
